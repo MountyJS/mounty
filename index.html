@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    
+    <body>
+        <div id="app">
+            <div class="todoInput mount" 
+                 data-flow="input => listen.enter => handleInputEnter">
+                 <input/>
+            </div>
+            <div class="todoList mount"
+                 data-flow="handleInputEnter => addListItem">
+            </div>
+        </div>
+        
+        <script src="app.js"></script>
+        <script src="mounty.js"></script>
+    </body>
+</html>
